@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.landingPage {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: bisque;
+  padding: 10px;
+  height: 450px;
+}
+
+.intro {
+  padding-top: 120px;
+  padding-left: 50px;
+}
+
+.intro h1 {
+  margin: 0px;
+}
+
+.highlighted {
+  color: rgb(185, 8, 8);
+}
+
+.separator {
+  border: 5px solid rgb(185, 8, 8);
+  margin-left: 25px;
+  height: 60%;
+  margin-top: 80px;
+}
