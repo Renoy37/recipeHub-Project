@@ -13,9 +13,6 @@ function PostPage(){
         
       }
 
-
-
-
     return(
    <div className="post-page">
           <form>
