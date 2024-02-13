@@ -1,4 +1,5 @@
 import Image1 from '../Assets/Untitled design (1).png'
+import "./Discover.css";
 
 function Discover (){
     return(
