@@ -3,35 +3,27 @@ import "./Discover.css";
 
 function Discover (){
     return(
-        <>
-        
-            <section>
+        <div className='container1'>
+          <div className='image12'>
               <img src={Image1} />
-            </section>
+           </div>
+           <div>
+             <h2 className='Discover-text'>DISCOVER MORE <span className='recipe'>RECIPE</span></h2>
+                <p className='p-tag'>
+                The classic burger is an all-time BBQ favourite! This super easy homemade beef burger recipe gives you delicious patties, packed with onions and herbs for extra flavour, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.  
+                See Method:
+                Serves 4
+                20 mins to prepare and 17 mins to cook
+                472 calories / serving
+             </p>
+             <input placeholder='Type here'></input>
+             <button>
+                Search
+             </button>
+           </div>
 
-            <section>
-                <div>
-                    <h2>DISCOVER MORE RECIPES</h2>
-                </div>
-                <div>
-                    <p>
-                        The classic burger is an all-time BBQ favourite! This super easy homemade beef burger recipe gives you delicious patties, packed with onions and herbs for extra flavour, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.  
-                        See Method:
-                        Serves 4
-                        20 mins to prepare and 17 mins to cook
-                        472 calories / serving
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h2>SEARCH FOR RECIPES: </h2>
-                    <button placeholder='serch here'>Click Me</button>
-                    <button background-color='red' color='white'>Search</button>
-                </div>
-            </section>
 
-        </>
+        </div>
     );
 }
 
