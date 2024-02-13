@@ -10,6 +10,7 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .nav-branding {
   display: flex;
   font-size: 29px;
@@ -45,3 +46,8 @@
   text-decoration: underline;
   transition:  color.3s ease-in-out,text-decoration 0.3s ease;
 }
+=======
+.post-page{
+  background-color: black;
+}
+>>>>>>> mujahid
