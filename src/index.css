@@ -44,6 +44,11 @@
 
 .nav-links:hover {
   text-decoration: underline;
+<<<<<<< HEAD
+=======
+
+  transition:  color.3s ease-in-out,text-decoration 0.3s ease;
+>>>>>>> development
 }
 
 .post-page{
@@ -109,3 +114,52 @@ form button{
   border-radius: 8px;
   padding: 20px -3px;
 }
+<<<<<<< HEAD
+=======
+.post-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-data-card {
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-data-card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.post-data-card .card-content {
+  padding: 20px;
+}
+
+.post-data-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post-data-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .post-data-card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .post-data-card {
+    width: calc(100% - 20px);
+  }
+}
+
