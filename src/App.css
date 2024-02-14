@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .landingPage {
   display: flex;
@@ -47,16 +9,15 @@
 }
 
 .intro {
-  padding-top: 120px;
-  padding-left: 50px;
-}
-
-.intro h1 {
-  margin: 0px;
+  margin: auto;
+  text-align: center;
+  margin-left: 100px;
 }
 
 .intro p {
   margin: 10px;
+  margin-left: 50px;
+  font-size: 20px;
 }
 
 .highlighted {
@@ -64,8 +25,8 @@
 }
 
 .separator {
-  border: 5px solid rgb(185, 8, 8);
-  margin-left: 25px;
+  border: 4px solid rgb(185, 8, 8);
+  background-color: rgb(185, 8, 8);
   margin-top: 80px;
   flex-grow: 1;
   margin-bottom: 40px;
@@ -80,6 +41,19 @@
   padding-left: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .separator {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    }
+
+  .intro {
+    width: fit-content;
+    margin-left: 5px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .landingPage {
     flex-direction: column;
@@ -87,17 +61,16 @@
   }
   
   .intro {
-    padding-top: 80px;
-    padding-left: 20px;
+    width: fit-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
-  
+
   .separator {
-    margin-left: 0;
     margin-top: 50px;
     margin-bottom: 20px;
   }
 }
-
 
 
 
