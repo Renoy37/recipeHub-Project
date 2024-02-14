@@ -49,6 +49,15 @@
   align-items: center;
 }
 
+.Disc-Image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) {
   .intro {
     padding-top: 60px;
