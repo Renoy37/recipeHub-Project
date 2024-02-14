@@ -14,19 +14,22 @@ function PostPage() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    console.log(formData)
+    
     fetch("https://project-db-two.vercel.app/meals", {
       method: 'POST',
       body: JSON.stringify(formData),
     })
       .then(response => response.json())
       .then(data => {
-        console.log(formData);
+        console.log("Response data:", data);
         setResponseData(data);
       })
       .catch(error => {
         console.error('Error:', error);
       });
   }
+
 
   return (
     <div className="post-page">
