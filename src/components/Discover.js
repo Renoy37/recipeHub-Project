@@ -1,12 +1,12 @@
-import Image1 from '../Assets/Untitled design (1).png'
+import Image1 from '../Assets/burgerking.jpg.png'
 
 function Discover (){
     return(
       <div className="landingPage">
-            <div className="intro">
-            <div className="homeImage">
+           <div className="Disc-Image">
                 <img src={Image1} alt="pizza" />
             </div>
+            <div className="intro">
                 <h1>DISCOVER MORE<span className="highlighted">COOK?</span></h1>
                 <p>
                         The classic burger is an all-time BBQ favourite! This super easy homemade beef burger recipe gives you delicious patties, packed with onions and herbs for extra flavour, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.  
