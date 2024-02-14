@@ -7,7 +7,7 @@ function Home () {
             <div className="intro">
                 <h1>DON'T KNOW WHAT </h1>
                 <h1>TO <span className="highlighted">COOK?</span></h1>
-                <p> 
+                <p className="ptag"> 
                     Whether you're a seasoned chef or a 
                     kitchen novice,  RecipeHUB is here to 
                     inspire your next culinary masterpiece. 
@@ -20,7 +20,7 @@ function Home () {
                 </p>
             </div>
             <div className="separator"></div>
-            <div className="homeimage">
+            <div className="homeImage">
                 <img src={image1} alt="pizza" />
             </div>
         </div>
