@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Discover from "./components/Discover";
+import Discover from './components/Discover'
 
 function App() {
   return (
