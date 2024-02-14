@@ -39,3 +39,79 @@ md	    960px
 lg	    1280px
 xl	    1920px
 
+
+.landingPage {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: bisque;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.intro {
+  margin: auto;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.intro p {
+  margin: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.highlighted {
+  color: rgb(185, 8, 8);
+}
+
+.separator {
+  border: 4px solid rgb(185, 8, 8);
+  background-color: rgb(185, 8, 8);
+  margin-top: 80px;
+  flex-grow: 1;
+  margin-bottom: 40px;
+}
+
+.homeImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .separator {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    }
+
+  .intro {
+    width: fit-content;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .landingPage {
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  .intro {
+    width: fit-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .separator {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
