@@ -44,11 +44,7 @@
 
 .nav-links:hover {
   text-decoration: underline;
-<<<<<<< HEAD
-=======
-
   transition:  color.3s ease-in-out,text-decoration 0.3s ease;
->>>>>>> development
 }
 
 .post-page{
@@ -114,8 +110,7 @@ form button{
   border-radius: 8px;
   padding: 20px -3px;
 }
-<<<<<<< HEAD
-=======
+
 .post-data {
   display: flex;
   flex-wrap: wrap;
