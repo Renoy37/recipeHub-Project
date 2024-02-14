@@ -52,12 +52,12 @@ function PostPage() {
             <input type="text" name="image" autoComplete="off" onChange={handleInputChange} />
           </label>
          
-          <label>Ingridients:
+          <label>Category:
             <input type="text" name="ingredients" autoComplete="off" onChange={handleInputChange} />
           </label>
          
-          <label>Description:
-            <input type="text" name="description" autoComplete="off" onChange={handleInputChange} />
+          <label>Instructions:
+            <input type="text" name="instructions" autoComplete="off" onChange={handleInputChange} />
           </label>
          
           <button type="submit">Submit</button>
@@ -68,8 +68,8 @@ function PostPage() {
         <div className="post-data">
           <p>Name: {responseData.strMeal}</p>
           <img src={responseData.strMealThumb} alt="Recipe" />
+          <p>Category: <a href={responseData.strCategory}>{responseData.strCategory}</a></p>
           <p>Instructions: {responseData.strInstructions}</p>
-          <p>Source: <a href={responseData.strSource}>{responseData.strSource}</a></p>
         </div>
       )}
     </div>
