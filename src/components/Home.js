@@ -7,7 +7,7 @@ function Home () {
             <div className="intro">
                 <h1>DON'T KNOW WHAT </h1>
                 <h1>TO <span className="highlighted">COOK?</span></h1>
-                <p> 
+                <p className="ptag"> 
                     Whether you're a seasoned chef or a 
                     kitchen novice,  RecipeHUB is here to 
                     inspire your next culinary masterpiece. 
