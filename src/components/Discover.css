@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.Discover{
+    color: aliceblue;
+}
+
+.Discover-text{
+    color: white;
+}
+
+.Discover-text .recipe{
+    color: red;
+}
+
+.p-tag{
+    color: white;
+}
+
+.search-button{
+    color: aliceblue;
+    background-color: aliceblue;
+}
