@@ -20,7 +20,7 @@ function Home () {
                 </p>
             </div>
             <div className="separator"></div>
-            <div className="homeimage">
+            <div className="homeImage">
                 <img src={image1} alt="pizza" />
             </div>
         </div>
