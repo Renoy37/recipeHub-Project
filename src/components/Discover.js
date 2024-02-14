@@ -10,7 +10,7 @@ function Discover (){
            <div>
              <h2 className='Discover-text'>DISCOVER MORE <span className='recipe'>RECIPE</span></h2>
                 <p className='p-tag'>
-                The classic burger is an all-time BBQ favourite! This super easy homemade beef burger recipe gives you delicious patties, packed with onions and herbs for extra flavour, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.  
+                The classic burger is an all-time BBQ favourite! This super easy homemade beef burger recipe gives you delicious patties, packed with onions and herbs for extra flavour, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.  
                 See Method:
                 Serves 4
                 20 mins to prepare and 17 mins to cook
