@@ -44,14 +44,16 @@ form{
 }
 
 form input{
-  width: 250px;
+  width: 200px;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin: opx 10px 10px 0px;
   padding-left: 5px;
 }
  
 form button{
-  width: 70px;
+  width: 90px;
   margin-bottom: 15px;
   border-radius: 8px;
+  padding: 20px -3px;
+
 }
