@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div>
+    <div className="navbar">
       <div className="Nav-container">
         <div className="nav-branding">
           Recipe<span className="hub">HUB</span>
