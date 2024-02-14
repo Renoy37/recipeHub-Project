@@ -50,3 +50,62 @@
 .post-page{
   background-color: #000;
 }
+
+body{
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post-page{
+  display: flex;
+}
+.post-dec{
+  max-width: 550px;
+  height: 340px;
+  margin: 90px 0px 0px 90px;
+}
+
+.post-dec h1{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.post-dec span{
+  color: #ff0000;
+}
+.post-dec p{
+  color: #000000;
+  font-size: 25px;
+  color: #fff;
+}
+
+.post-dec  img{
+  max-width: 500px;
+}
+
+form{
+  background-color: #ff0000;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 10px; 
+  margin: 100px 0px 0px 320px;
+  width: 400px;
+  padding: 10px 0px 0px 20px;
+  height: 400px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+form input{
+  width: 200px;
+  border-radius: 15px;
+  margin: opx 10px 10px 0px;
+  padding-left: 5px;
+}
+ 
+form button{
+  width: 90px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 20px -3px;
+}
