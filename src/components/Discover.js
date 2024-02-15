@@ -33,7 +33,7 @@ function Discover() {
         </div>
         <div className="content">
           <h1>
-            DISCOVER MORE<span className="highlighted">COOK?</span>
+            DISCOVER MORE TO <span className="highlighted">COOK?</span>
           </h1>
           <p className="discover-paragraph">
             The classic burger is an all-time BBQ favourite! This super easy

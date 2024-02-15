@@ -213,8 +213,8 @@
   color: #fff;
   height: 100vh;
   height: fit-content;
-
 }
+
 .contain {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
