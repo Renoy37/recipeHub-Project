@@ -221,9 +221,53 @@ form input{
 }
 
 .food {
-  height: 70%;
+  height: 50%;
 }
 
-/* .ftr {
-  margin-bottom: 0px;
-} */
+@media (max-width: 1400px) {
+  .food{
+    height: 45%;
+    width: 500px;
+    /* display: none; */
+  }
+  .discover-page {
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+
+@media (max-width: 1000px) {
+  .food{
+    height: 20%;
+    width: 450px;
+    /* display: none; */
+  }
+  .discover-page {
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .food{
+    /* height: 20%;
+    width: 450px; */
+    display: none;
+  }
+  .discover-page {
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
