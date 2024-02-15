@@ -1,22 +1,20 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 
 function Footer() {
   return (
-    <footer>
-      <div className="footer-container">
-        <div className="footer-social">
-          <h3>Follow Us</h3>
-          <ul className="social-links">
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          </ul>
-        </div>
+    <div className="footer-container">
+      <div className="icons">
+        <Icon icon="skill-icons:instagram" />
+        <Icon icon="fa6-brands:facebook-f" />
+        <Icon icon="akar-icons:pinterest-fill" />
       </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 RecipeHUB. All rights reserved.</p>
-      </div>
-    </footer>
+      <ul className="footer-links">
+        <li className="links">HOME</li>
+        <li className="links">DISCOVER</li>
+        <li className="links">ADDYOURS</li>
+      </ul>
+    </div>
   );
 }
 
