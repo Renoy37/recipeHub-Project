@@ -21,7 +21,7 @@
 
 
 .nav-branding {
-  font-size: 27px;
+  font-size: 19px;
 }
 
 .nav-branding .hub {
@@ -37,9 +37,11 @@
   font-size: larger;
 }
 
-.nav-links {
+.navs {
   margin-right: 20px;
   cursor: pointer;
+  color: #000;
+  font-weight: bold;
 }
 
 .nav-links:hover {
@@ -154,3 +156,13 @@ form button{
   }
 }
 
+.navs {
+  text-decoration: none;
+}
+
+.chef {
+  /* padding: 20px; */
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+}
