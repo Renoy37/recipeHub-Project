@@ -158,3 +158,25 @@ form button{
   }
 }
 
+
+/* Styles for meal cards */
+.post-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Adjust for three columns */
+  max-width: calc(33.33% - 20px); /* Set maximum width for three columns */
+  box-sizing: border-box;
+  float: left; /* Float the cards to align them horizontally */
+  background-color: #ff0000;
+  display: flex;
+}
+
+/* Clear the float to ensure proper wrapping */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

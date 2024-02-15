@@ -2,8 +2,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-
-import PostPage from "./PostPage";
+import PostPage from "./components/PostPage";
         
 
 function App() {
