@@ -13,7 +13,6 @@ function App() {
       <Discover />
       <PostPage/>
       <Footer />
-
     </div>
   );
 }
