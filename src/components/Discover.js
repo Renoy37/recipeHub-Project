@@ -19,7 +19,6 @@ function Discover() {
   }, []);
 
   const handleSearch = () => {
-    // Filter meals based on search query
     const filteredMeals = meals.filter((meal) =>
       meal.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
