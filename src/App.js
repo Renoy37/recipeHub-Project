@@ -13,6 +13,9 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
           <Route path="/home">
             <Home />
           </Route>
