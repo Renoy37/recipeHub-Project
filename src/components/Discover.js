@@ -15,6 +15,10 @@ function Discover (){
                         20 mins to prepare and 17 mins to cook
                         472 calories / serving
                     </p>
+                    <div className='button'>
+                        <input placeholder='Type here'></input>
+                        <button color='red'>Search</button>
+                    </div>
             </div>
 
         </div>

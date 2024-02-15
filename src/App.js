@@ -1,18 +1,25 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/Navbar';
 import Discover from './components/Discover';
-import Home from "./components/Home";
-import PostPage from "./PostPage";
+import Home from './components/Home';
+import PostPage from './PostPage';
+
 
 function App() {
-return (
-<div className="App">
-<Navbar />
-<Home />
-<Discover />
-<PostPage/>
-</div>
-);
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/discover" component={Discover} />
+          <Route path="/post" component={PostPage} />
+        </Switch>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
