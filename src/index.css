@@ -92,91 +92,46 @@ form{
   margin: 100px 0px 0px 320px;
   width: 400px;
   padding: 10px 0px 0px 20px;
-  height: 400px;
+  height: 450px;
   color: #fff;
   border-radius: 10px;
 }
 
 form input{
-  width: 200px;
-  border-radius: 15px;
-  margin: opx 10px 10px 0px;
+  height: 25px;
+  width: 250px;
+  border-radius: 8px;
+  margin: 6px 10px 10px 0px;
   padding-left: 5px;
+  display: flex;
 }
  
-form button{
-  width: 90px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  padding: 20px -3px;
-}
 
-.post-data {
+
+.post-dec{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.post-data-card {
-  width: calc(33.33% - 20px); 
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.post-data-card img {
-  width: 100%;
-  height: 200px; 
-  object-fit: cover;
-}
-
-.post-data-card .card-content {
+  border: 1px solid #fff;
+  height: 450px;
   padding: 20px;
+  border-radius: 10px;
 }
 
-.post-data-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.post-dec p{
+  width: 400px;
+  font-style: italic;
 }
 
-.post-data-card p {
-  font-size: 14px;
-  color: #666;
+.form button{
+  width: 80px;
+  height: 35px;
+  margin-bottom: -20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .post-data-card {
-    width: calc(50% - 20px); 
-  }
+.form button:hover{
+  color:#000 ;
+  background-color: #fff;
 }
-
-@media (max-width: 480px) {
-  .post-data-card {
-    width: calc(100% - 20px);
-  }
-}
-
-
-/* Styles for meal cards */
-.post-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  width: calc(33.33% - 20px); /* Adjust for three columns */
-  max-width: calc(33.33% - 20px); /* Set maximum width for three columns */
-  box-sizing: border-box;
-  float: left; /* Float the cards to align them horizontally */
-  background-color: #ff0000;
-  display: flex;
-}
-
-/* Clear the float to ensure proper wrapping */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-

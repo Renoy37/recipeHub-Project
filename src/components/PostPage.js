@@ -1,7 +1,100 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+// import burger from '../images/burger-removebg-preview.png'
 
-function PostPage(){
-  // State to manage form data
+// function PostPage(){
+//   const [formData, setFormData] = useState({
+//     name: '',
+//     image: '',
+//     category: '',
+//     instructions: ''
+//   });
+
+//   const [submittedMeals, setSubmittedMeals] = useState([]);
+
+
+//   const handleSubmit = async (event) => {
+//     event.preventDefault(); 
+
+//     try {
+//       const response = await fetch("https://database-recipe-hub.vercel.app/meals", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify(formData)
+//       });
+//       if (response.ok) {
+//         const meal = await response.json(); 
+//         setSubmittedMeals([...submittedMeals, meal]);
+//         setFormData({
+//           name: '',
+//           image: '',
+//           category: '',
+//           instructions: ''
+//         });
+//       } else {
+//         console.error("Error submitting recipe:", response.statusText);
+//       }
+//     } catch (error) {
+//       console.error("Network error:", error.message);
+//     }
+//   };
+//   const handleInputChange = (event) => {
+//     const { name, value } = event.target;
+//     setFormData({ ...formData, [name]: value });
+//   };
+
+//   return (
+//     <div className='post-dec'>
+//       <div className='dec-left'>
+//      <p>Share the love, share the flavor! Contribute your favorite 
+//       recipe and let's create a culinary masterpiece together.
+//        Your dish could be the next big hit on our platform – tantalize 
+//        taste buds and inspire fellow foodies worldwide!</p>
+//        <img src={burger} alt='burger'/>
+//       </div>
+//       <div className="form">
+//         <form autoComplete="off" onSubmit={handleSubmit}>
+//           <label>Name of Recipe:
+//             <input type="text" name="name" autoComplete="off" onChange={handleInputChange} value={formData.name} />
+//           </label>
+         
+//           <label>Image-URL:
+//             <input type="text" name="image" autoComplete="off" onChange={handleInputChange} value={formData.image} />
+//           </label>
+         
+//           <label>Category:
+//             <input type="text" name="category" autoComplete="off" onChange={handleInputChange} value={formData.category} />
+//           </label>
+         
+//           <label>Instructions:
+//             <input type="text" name="instructions" autoComplete="off" onChange={handleInputChange} value={formData.instructions} />
+//           </label>
+         
+//           <button type="submit">Submit</button>
+//         </form>
+//       </div>
+      
+//       <div className="clearfix">
+//         {submittedMeals.map((meal, index) => (
+//           <div className="post-card" key={index}>
+//             <h3>{meal.name}</h3>
+//             <img src={meal.image} alt={meal.name} style={{ maxWidth: '100%' }} />
+//             <p><strong>Category:</strong> {meal.category}</p>
+//             <p><strong>Instructions:</strong> {meal.instructions}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default PostPage;
+
+import React, { useState, useEffect } from 'react';
+import burger from '../images/burger-removebg-preview.png';
+
+function PostPage() {
   const [formData, setFormData] = useState({
     name: '',
     image: '',
@@ -9,29 +102,40 @@ function PostPage(){
     instructions: ''
   });
 
-  // State to store submitted meals
   const [submittedMeals, setSubmittedMeals] = useState([]);
 
-  // Function to handle form submission
+  useEffect(() => {
+    const fetchSubmittedMeals = async () => {
+      try {
+        const response = await fetch("https://database-recipe-hub.vercel.app/meals");
+        if (response.ok) {
+          const meals = await response.json();
+          setSubmittedMeals(meals);
+        } else {
+          console.error("Failed to fetch submitted meals:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Network error:", error.message);
+      }
+    };
+
+    fetchSubmittedMeals();
+  }, [submittedMeals]); // Fetch again when submittedMeals changes
+
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
     try {
-      // Make POST request to the server
-      const response = await fetch("http://localhost:3000/meals", {
+      const response = await fetch("https://database-recipe-hub.vercel.app/meals", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(formData)
       });
-
-      // Check if request was successful
       if (response.ok) {
-        // Add submitted meal to the list
-        const meal = await response.json(); // Get the response data
+        const meal = await response.json();
         setSubmittedMeals([...submittedMeals, meal]);
-        // Clear the form
         setFormData({
           name: '',
           image: '',
@@ -39,23 +143,27 @@ function PostPage(){
           instructions: ''
         });
       } else {
-        // Handle error response
         console.error("Error submitting recipe:", response.statusText);
       }
     } catch (error) {
-      // Handle network errors
       console.error("Network error:", error.message);
     }
   };
 
-  // Function to handle input changes
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
   return (
-    <div>
+    <div className='post-dec'>
+      <div className='dec-left'>
+        <p>Share the love, share the flavor! Contribute your favorite 
+          recipe and let's create a culinary masterpiece together.
+          Your dish could be the next big hit on our platform – tantalize 
+          taste buds and inspire fellow foodies worldwide!</p>
+        <img src={burger} alt='burger'/>
+      </div>
       <div className="form">
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label>Name of Recipe:
@@ -76,10 +184,8 @@ function PostPage(){
          
           <button type="submit">Submit</button>
         </form>
-      </div>
-      
-      <div className="clearfix">
-        {/* Display submitted meals as cards */}
+{/* 
+        <div className="clearfix">
         {submittedMeals.map((meal, index) => (
           <div className="post-card" key={index}>
             <h3>{meal.name}</h3>
@@ -88,10 +194,26 @@ function PostPage(){
             <p><strong>Instructions:</strong> {meal.instructions}</p>
           </div>
         ))}
+      </div> */}
+
+
+
+<div className="post-card-container">
+  {submittedMeals.map((meal, index) => (
+    <div className="post-card" key={index}>
+      <h3>{meal.name}</h3>
+      <img src={meal.image} alt={meal.name} style={{ maxWidth: '100%' }} />
+      <p><strong>Category:</strong> {meal.category}</p>
+      <p><strong>Instructions:</strong> {meal.instructions}</p>
+    </div>
+  ))}
+</div>
+
       </div>
+      
+     
     </div>
   );
-};
+}
 
 export default PostPage;
-
