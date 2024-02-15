@@ -11,7 +11,7 @@ function Discover() {
       .then((res) => res.json())
       .then((data) => {
         setMeals(data);
-        setDisplayedMeals(data.slice(0, 4));
+        setDisplayedMeals(data.slice(0, 6));
       })
       .catch((error) => {
         console.error("Error fetching meals:", error);
