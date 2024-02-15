@@ -47,27 +47,23 @@
   transition:  color.3s ease-in-out,text-decoration 0.3s ease;
 }
 
-.post-page{
-  background-color: #000;
+.footer-container{
+  background-color: rgb(185, 8, 8);
+  width: 100%;
+  display: block;
+  height: 120px;
 }
 
-body{
-  background-color: black;
-  font-family: 'Poppins', sans-serif;
-}
-
-.post-page{
+.icons,
+.footer-links {
   display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  list-style: none;
+  cursor: default;
 }
 
-.post-dec{
-  max-width: 550px;
-  height: 340px;
-  margin: 90px 0px 0px 90px;
-}
-
-.post-dec h1{
-  color: #fff;
+.links:hover {
   text-decoration: underline;
 }
 
@@ -156,27 +152,5 @@ form button{
   .post-data-card {
     width: calc(100% - 20px);
   }
-}
-
-
-/* Styles for meal cards */
-.post-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  width: calc(33.33% - 20px); /* Adjust for three columns */
-  max-width: calc(33.33% - 20px); /* Set maximum width for three columns */
-  box-sizing: border-box;
-  float: left; /* Float the cards to align them horizontally */
-  background-color: #ff0000;
-  display: flex;
-}
-
-/* Clear the float to ensure proper wrapping */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
