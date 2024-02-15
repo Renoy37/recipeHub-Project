@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Discover from './components/Discover';
 import Home from './components/Home';
 import PostPage from './PostPage';
-import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
           <Route path="/discover" component={Discover} />
           <Route path="/post" component={PostPage} />
         </Switch>
-        <Footer />
       </div>
     </Router>
   );
