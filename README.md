@@ -35,6 +35,9 @@ To get started with RecipeHub, follow these steps:
 
 4. Open your browser and navigate to `http://localhost:3000` to view the app.
 
+## live
+see live : `https://main--recipehubproject.netlify.app/Home`
+
 ## Usage
 
 Once the app is running, you can start exploring recipes, searching for specific dishes, and interacting with other users. Here are some key features to try out:
@@ -49,3 +52,7 @@ Once the app is running, you can start exploring recipes, searching for specific
 ## Contributing
 
 welcome contributions from the group! If you have ideas for new features, bug fixes, or improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
