@@ -1,11 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar';
-import Discover from './components/Discover';
-import Home from './components/Home';
-import PostPage from './components/PostPage';
-
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Discover from "./components/Discover";
+import Home from "./components/Home";
+import PostPage from "./components/PostPage";
 
 function App() {
   return (
@@ -13,9 +12,15 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/discover" component={Discover} />
-          <Route path="/post" component={PostPage} />
+          <Route path="/Home">
+            <Home />
+          </Route>
+          <Route path="/Discover">
+            <Discover />
+          </Route>
+          <Route path="/PostPage">
+            <PostPage />
+          </Route>
         </Switch>
       </div>
     </Router>
