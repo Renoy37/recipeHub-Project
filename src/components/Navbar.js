@@ -11,7 +11,7 @@ function Navbar() {
         <ul className="nav-link-container">
           <li className="nav-links">Home</li>
           <li className="nav-links">Discover</li>
-          <li className="nav-links">Footer</li>
+          <li className="nav-links">Add Yours</li>
         </ul>
       </div>
     </div>

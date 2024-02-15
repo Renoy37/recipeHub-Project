@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Discover from './components/Discover';
 import Home from "./components/Home";
 import PostPage from "./PostPage";
+import Footer from "./components/Footer";
 
 function App() {
 return (
@@ -11,6 +12,7 @@ return (
 <Home />
 <Discover />
 <PostPage/>
+<Footer />
 </div>
 );
 }

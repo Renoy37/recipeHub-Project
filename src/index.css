@@ -158,3 +158,8 @@ form button{
   }
 }
 
+.footer-container {
+  background-color: rgb(185, 8, 8);
+  color: white;
+  padding: 25px;
+}
