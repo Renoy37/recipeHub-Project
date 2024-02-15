@@ -171,10 +171,13 @@ form input{
   background-color: #000000;
   color: #fff;
   height: 100vh;
+  height: fit-content;
+
 }
 .contain {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* height: fit-content; */
 }
 
 .content {
@@ -216,3 +219,11 @@ form input{
 .searchButton:hover {
   background-color: rgb(229, 40, 40);
 }
+
+.food {
+  height: 70%;
+}
+
+/* .ftr {
+  margin-bottom: 0px;
+} */

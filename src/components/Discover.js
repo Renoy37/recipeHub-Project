@@ -11,7 +11,7 @@ function Discover() {
       .then((res) => res.json())
       .then((data) => {
         setMeals(data);
-        setDisplayedMeals(data.slice(0, 3));
+        setDisplayedMeals(data.slice(0, 4));
       })
       .catch((error) => {
         console.error("Error fetching meals:", error);
@@ -29,7 +29,7 @@ function Discover() {
     <div className="DiscoveryPage">
       <div className="contain">
         <div className="Disc-Image">
-          <img src={Image1} alt="pizza" />
+          <img src={Image1} alt="pizza" className="food" />
         </div>
         <div className="content">
           <h1>

@@ -23,7 +23,7 @@ function App() {
             <PostPage />
           </Route>
         </Switch>
-        <Footer />
+        <Footer className="ftr"/>
       </div>
     </Router>
   );
