@@ -44,3 +44,23 @@
 .nav-links:hover {
   text-decoration: underline;
 }
+
+.footer-container{
+  background-color: rgb(185, 8, 8);
+  width: 100%;
+  display: block;
+  height: 120px;
+}
+
+.icons,
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  list-style: none;
+  cursor: default;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
