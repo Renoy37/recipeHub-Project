@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/Home">
+          <Route path="/">
             <Home />
           </Route>
           <Route path="/Discover">
@@ -23,7 +23,7 @@ function App() {
             <PostPage />
           </Route>
         </Switch>
-        <Footer className="ftr"/>
+        <Footer className="ftr" />
       </div>
     </Router>
   );
