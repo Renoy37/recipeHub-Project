@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: auto;
 }
 
 .landingPage {
@@ -16,8 +15,6 @@
 }
 
 .intro {
-  /* padding-top: 120px;
-  padding-left: 50px; */
   margin: auto;
   max-width: 700px;
   text-align: center;
@@ -37,22 +34,8 @@
 }
 
 .separator {
-  /* border: 5px solid rgb(185, 8, 8);
-  margin-left: 25px;
-  margin-top: 80px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-=======
-=======
->>>>>>> 6a91c33d57c49b7d690577bd9e9aebe4d40aedcd
-  flex-grow: 1;
-  margin-bottom: 40px;
-  width: 0px; */
   border-left: 6px solid rgb(185, 8, 8);
   margin-bottom: 40px;
-
   margin-left: 200px;
   margin-top: 80px;
 }
@@ -64,7 +47,15 @@
   flex-grow: 1;
   display: flex;
   align-items: center;
-  /* margin: auto; */
+}
+
+.Disc-Image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -78,11 +69,6 @@
     margin-bottom: 10px;
     margin-left: 10px;
   }
-
-  /* .pizza {
-    height: 200px;
-    width: 200px;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -129,4 +115,17 @@
   }
 }
 
+.Image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  background-color: brown;
+  color: white;
+}
 
