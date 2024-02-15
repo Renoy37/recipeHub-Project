@@ -163,3 +163,26 @@ form button{
   color: white;
   padding: 25px;
 }
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.footer-link-container {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  justify-content: center;
+}
+
+.footer-links {
+  display: inline-block;
+  margin-right: 50px; 
+}
