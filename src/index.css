@@ -1,59 +1,299 @@
+/* :root {
+  --background-color: rgb(185, 8, 8);
+
+
+} */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+/* Navbar styles */
 .navbar {
-  background-color: rgb(185, 8, 8);
-  color: white;
-  padding: 19px;
+  background-color: #b22222;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
 }
 
 .Nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
-
 
 .nav-branding {
-  font-size: 19px;
+  display: flex;
+  align-items: center;
 }
 
-.nav-branding .hub {
-  color: #000;
+.nav-branding img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.hub {
   font-weight: bold;
 }
 
 .nav-link-container {
-  list-style-type: none;
   display: flex;
+  align-items: center;
+}
+
+.nav-link-container ul {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-size: larger;
+}
+
+.nav-links {
+  margin: 0 15px;
 }
 
 .navs {
-  margin-right: 20px;
-  cursor: pointer;
-  color: #000;
-  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
-.nav-links:hover {
+.navs:hover {
   text-decoration: underline;
-  transition:  color.3s ease-in-out,text-decoration 0.3s ease;
 }
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-link-container {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #b22222;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link-container.open {
+    display: flex;
+  }
+
+  .nav-link-container ul {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
 
 .footer-container{
   background-color: rgb(185, 8, 8);
   width: 100%;
   display: block;
-  /* height: 100px; */
+}
+
+
+/* Common styles for both pages */
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-page,
+.DiscoveryPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.post-dec,
+.contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.dec-left,
+.Disc-Image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dec-left img,
+.Disc-Image img {
+  width: 100%;
+  max-width: 400px; /* Set a consistent max width for images */
+  height: 300px; /* Set a consistent height for images */
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #444;
+  color: #fff;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #b22222;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #cf4646;
+}
+
+.post-cards-container,
+.searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.post-card,
+.mealCard {
+  background: #333;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.post-card h3,
+.mealCard .mealName {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #b22222;
+}
+
+.meal-image,
+.mealCard img {
+  width: 100%;
+  max-width: 300px; /* Set a consistent max width for images */
+  height: 200px; /* Set a consistent height for images */
+  border-radius: 8px;
+}
+
+.post-card p,
+.mealCard p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.post-card ol,
+.mealCard .mealInstructions {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.post-card li,
+.mealCard .mealInstructions li {
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .post-card,
+  .mealCard {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card,
+  .mealCard {
+    width: 100%;
+  }
+
+  .post-dec,
+  .contain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dec-left,
+  .Disc-Image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .icons,
@@ -69,161 +309,75 @@
   text-decoration: underline;
 }
 
-.post-dec span{
-  color: #ff0000;
-}
-.post-dec p{
-  color: #000000;
-  font-size: 25px;
-  color: #fff;
+.highlighted {
+  color: #b22222;
 }
 
-.post-dec  img{
-  max-width: 500px;
-}
-
-form{
-  background-color: #ff0000;
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 10px; 
-  margin: 100px 0px 0px 320px;
-  width: 400px;
-  padding: 10px 0px 0px 20px;
-  height: 450px;
-  color: #fff;
-  border-radius: 10px;
-}
-
-form input{
-  height: 25px;
-  width: 250px;
-  border-radius: 8px;
-  margin: 6px 10px 10px 0px;
-  padding-left: 5px;
+.button {
   display: flex;
-}
- 
-
-
-.post-dec{
-  display: flex;
-  border: 1px solid #fff;
-  height: 450px;
-  padding: 20px;
-}
-
-.post-data-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.post-data-card p {
-  font-size: 14px;
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .post-data-card {
-    width: calc(50% - 20px); 
-  }
-}
-
-@media (max-width: 480px) {
-  .post-data-card {
-    width: calc(100% - 20px);
-  }
-}
-
-.navs {
-  text-decoration: none;
-  color: #fff;
-}
-
-.chef {
-  /* padding: 20px; */
-  height: 25px;
-  width: 25px;
-  border-radius: 25px;
-}
-
-.searchResults {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.mealCard {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-}
-
-.mealCard img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-}
-
-.DiscoveryPage {
-  display: flex;
-  flex-direction: column;
-  background-color: #000000;
-  color: #fff;
-  height: 100vh;
-  height: fit-content;
-
-}
-.contain {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* height: fit-content; */
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2; 
   align-items: center;
-  justify-content: center;
-  margin-top: 200px;
-}
-
-.discover-paragraph {
-  padding: 20px;
-  max-width: 800px;
-  font-size: larger;
-}
-
-.searchResults {
-  padding: 50px;
+  margin-top: 20px;
 }
 
 .searchInput {
+  flex: 1;
   padding: 10px;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 200px;
+  border-radius: 4px 0 0 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
 }
 
 .searchButton {
   padding: 10px 20px;
-  background-color: rgb(185, 8, 8);
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #b22222;
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .searchButton:hover {
-  background-color: rgb(229, 40, 40);
+  background-color: #a11b1b;
 }
 
-.food {
-  height: 70%;
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+  }
 
-/* .ftr {
-  margin-bottom: 0px;
-} */
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchInput, .searchButton {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  .searchButton {
+    border-radius: 4px;
+  }
+
+  .searchResults {
+    flex-direction: column;
+  }
+
+  .mealCard {
+    flex: 1 1 100%;
+  }
+}
